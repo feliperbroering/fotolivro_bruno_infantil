@@ -1,0 +1,2519 @@
+{
+  "versao": "1.0",
+  "total_paginas": 54,
+  "paginas": [
+    {
+      "tipo": "capa",
+      "layout": "L1",
+      "fotos": [],
+      "titulo": "Bruno Sereia Broering",
+      "subtitulo": "Momentos no Infantil 1 ao 5",
+      "ano": "2021 ~ 2025",
+      "imagem": "_capas/capa.jpg"
+    },
+    {
+      "tipo": "subcapa",
+      "layout": "L1",
+      "fotos": [],
+      "titulo": "Infantil 1",
+      "subtitulo": "",
+      "ano": "2021",
+      "imagem": "_capas/subcapa_infantil1.jpg"
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil1/10.jpeg",
+          "largura": 4128,
+          "altura": 2322,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.46799999999999997,
+          "pan_y": 0.36799999999999944,
+          "zoom": 0.9972001967579106,
+          "slot_tipo": "fh-t"
+        },
+        {
+          "caminho": "infantil1/11.jpeg",
+          "largura": 4128,
+          "altura": 2322,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.15199999999999914,
+          "pan_y": 0.45199999999999996,
+          "zoom": 1.0222200684249398,
+          "slot_tipo": "fh-b"
+        },
+        {
+          "caminho": "infantil1/12.jpeg",
+          "largura": 4128,
+          "altura": 2322,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.18799999999999972,
+          "zoom": 0.3,
+          "slot_tipo": "square"
+        },
+        {
+          "caminho": "infantil1/13.jpeg",
+          "largura": 4128,
+          "altura": 2322,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 0.3,
+          "slot_tipo": "square"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil1/14.jpeg",
+          "largura": 2315,
+          "altura": 3286,
+          "orientacao": "retrato",
+          "slot_index": 0,
+          "pan_x": 0.7759999999999998,
+          "pan_y": 0.1599999999999993,
+          "zoom": 0.3,
+          "slot_tipo": "fv-l"
+        },
+        {
+          "caminho": "infantil1/15.jpeg",
+          "largura": 2322,
+          "altura": 3209,
+          "orientacao": "retrato",
+          "slot_index": 1,
+          "pan_x": 0.8719999999999999,
+          "pan_y": 0.2999999999999998,
+          "zoom": 1.2653704957664011,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil1/2.jpeg",
+          "largura": 3313,
+          "altura": 2316,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil1/3.jpeg",
+          "largura": 4128,
+          "altura": 2322,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil1/5.jpeg",
+          "largura": 4128,
+          "altura": 2322,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil1/6.jpeg",
+          "largura": 4128,
+          "altura": 2322,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil1/7.jpeg",
+          "largura": 2467,
+          "altura": 2314,
+          "orientacao": "quadrada",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil1/8.jpeg",
+          "largura": 2322,
+          "altura": 4128,
+          "orientacao": "retrato",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L3C",
+      "fotos": [
+        {
+          "caminho": "infantil1/L1_1.jpeg",
+          "largura": 3242,
+          "altura": 2153,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil1/L1_4.jpeg",
+          "largura": 4128,
+          "altura": 2322,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil1/L2V_9.jpeg",
+          "largura": 2310,
+          "altura": 2934,
+          "orientacao": "retrato",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.043999999999999616,
+          "zoom": 1.1063934335112566,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "subcapa",
+      "layout": "L1",
+      "fotos": [],
+      "titulo": "Infantil 2",
+      "subtitulo": "",
+      "ano": "2022",
+      "imagem": "_capas/subcapa_infantil2.jpg"
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/1 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/1.jpeg",
+          "largura": 1200,
+          "altura": 1600,
+          "orientacao": "retrato",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/10 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/10.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/11 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/11.jpeg",
+          "largura": 1024,
+          "altura": 768,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/12 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/12.jpeg",
+          "largura": 4032,
+          "altura": 1960,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/13 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.492,
+          "pan_y": 0.07600000000000001,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/13.jpeg",
+          "largura": 4160,
+          "altura": 3120,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.19599999999999973,
+          "pan_y": 0.07600000000000001,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/14 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/14.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/15 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/15.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/16 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.6920000000000002,
+          "pan_y": 1,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/16.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/17 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/17.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/18.jpeg",
+          "largura": 1200,
+          "altura": 1600,
+          "orientacao": "retrato",
+          "slot_index": 2,
+          "pan_x": 0.2759999999999998,
+          "pan_y": 0.31599999999999984,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/19.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/2 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/2.jpeg",
+          "largura": 1200,
+          "altura": 1600,
+          "orientacao": "retrato",
+          "slot_index": 1,
+          "pan_x": 0.3799999999999999,
+          "pan_y": 0.33199999999999985,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/20.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/21.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/22.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/23.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/24.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/25.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/26.jpeg",
+          "largura": 4160,
+          "altura": 3120,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.532,
+          "pan_y": 0.3719999999999998,
+          "zoom": 0.9832629220932714,
+          "slot_tipo": "square"
+        },
+        {
+          "caminho": "infantil2/27.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 1,
+          "pan_y": 1,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/28.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.41999999999999993,
+          "pan_y": 0.54,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/29.jpeg",
+          "largura": 1200,
+          "altura": 1600,
+          "orientacao": "retrato",
+          "slot_index": 3,
+          "pan_x": 0.3719999999999999,
+          "pan_y": 0.9160000000000004,
+          "zoom": 1,
+          "slot_tipo": "fv-l"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/3 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.6479999999999997,
+          "pan_y": 0.8600000000000003,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/3.jpeg",
+          "largura": 1200,
+          "altura": 1600,
+          "orientacao": "retrato",
+          "slot_index": 1,
+          "pan_x": 0.8320000000000003,
+          "pan_y": 0.03599999999999979,
+          "zoom": 1.0113287199288608,
+          "slot_tipo": "fv-r"
+        },
+        {
+          "caminho": "infantil2/30.jpeg",
+          "largura": 1200,
+          "altura": 1600,
+          "orientacao": "retrato",
+          "slot_index": 2,
+          "pan_x": 0.984,
+          "pan_y": 0.41999999999999993,
+          "zoom": 1.4340520250797257,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/31.jpeg",
+          "largura": 1024,
+          "altura": 768,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.3,
+          "pan_y": 0.7960000000000003,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/32.jpeg",
+          "largura": 1200,
+          "altura": 770,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.6400000000000001,
+          "pan_y": 0.5319999999999996,
+          "zoom": 1.2498501973971707,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/4 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/4.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/5 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5519999999999998,
+          "pan_y": 0.15199999999999925,
+          "zoom": 0.7513324062153686,
+          "slot_tipo": "fv-l"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/5.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5559999999999999,
+          "pan_y": 0.47599999999999987,
+          "zoom": 0.7522822047211222,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/6 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/6.jpeg",
+          "largura": 1024,
+          "altura": 768,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/7 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil2/7.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/8 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/8.jpeg",
+          "largura": 1200,
+          "altura": 1600,
+          "orientacao": "retrato",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil2/9 (1).jpeg",
+          "largura": 4608,
+          "altura": 3456,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L1",
+      "fotos": [
+        {
+          "caminho": "infantil2/9.jpeg",
+          "largura": 1024,
+          "altura": 768,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5640000000000001,
+          "pan_y": 0.46799999999999997,
+          "zoom": 1.3755831305682658,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "subcapa",
+      "layout": "L1",
+      "fotos": [],
+      "titulo": "Infantil 3",
+      "subtitulo": "",
+      "ano": "2023",
+      "imagem": "_capas/subcapa_infantil3.jpg"
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil3/1 (1).jpeg",
+          "largura": 3024,
+          "altura": 4032,
+          "orientacao": "retrato",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/1.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/10.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/11.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil3/12.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/13.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/14.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/15.jpeg",
+          "largura": 4032,
+          "altura": 1908,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil3/16.jpeg",
+          "largura": 4032,
+          "altura": 1908,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/17.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/18.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/19.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil3/2 (1).jpeg",
+          "largura": 3024,
+          "altura": 4032,
+          "orientacao": "retrato",
+          "slot_index": 0,
+          "pan_x": 0.484,
+          "pan_y": 0.8680000000000003,
+          "zoom": 0.7847255835682151,
+          "slot_tipo": "full"
+        },
+        {
+          "caminho": "infantil3/2.jpeg",
+          "largura": 3024,
+          "altura": 4032,
+          "orientacao": "retrato",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 0.31195548281073565,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/20.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.3639999999999999,
+          "pan_y": 0.46799999999999997,
+          "zoom": 1.174182654172183,
+          "slot_tipo": "full"
+        },
+        {
+          "caminho": "infantil3/21.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil3/22.jpeg",
+          "largura": 681,
+          "altura": 1440,
+          "orientacao": "retrato",
+          "slot_index": 0,
+          "pan_x": 0.7480000000000002,
+          "pan_y": 1,
+          "zoom": 1,
+          "slot_tipo": "fv-l"
+        },
+        {
+          "caminho": "infantil3/23.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/24.jpeg",
+          "largura": 1920,
+          "altura": 909,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5800000000000001,
+          "pan_y": 0.46799999999999997,
+          "zoom": 1.0135751497745513,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/25.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.059999999999999644,
+          "pan_y": 0.2679999999999998,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil3/26.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/27.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.532,
+          "pan_y": 1,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/28.jpeg",
+          "largura": 1080,
+          "altura": 1440,
+          "orientacao": "retrato",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "fv-l"
+        },
+        {
+          "caminho": "infantil3/29.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil3/30.jpeg",
+          "largura": 1080,
+          "altura": 1440,
+          "orientacao": "retrato",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/31.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/32.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/33.jpeg",
+          "largura": 1920,
+          "altura": 2560,
+          "orientacao": "retrato",
+          "slot_index": 3,
+          "pan_x": 0.5720000000000001,
+          "pan_y": 0.32399999999999984,
+          "zoom": 0.9821755841374398,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil3/34.jpeg",
+          "largura": 960,
+          "altura": 1280,
+          "orientacao": "retrato",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/35.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 1,
+          "pan_y": 0.5640000000000001,
+          "zoom": 1,
+          "slot_tipo": "fh-t"
+        },
+        {
+          "caminho": "infantil3/36.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.508,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/37.jpeg",
+          "largura": 3024,
+          "altura": 4032,
+          "orientacao": "retrato",
+          "slot_index": 3,
+          "pan_x": 0.54,
+          "pan_y": 0.6799999999999998,
+          "zoom": 0.5028437462449067,
+          "slot_tipo": "fv-l"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil3/4.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.968,
+          "pan_y": 0.6120000000000001,
+          "zoom": 0.3,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/5.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/6.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/7.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L2H",
+      "fotos": [
+        {
+          "caminho": "infantil3/8.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil3/9.jpeg",
+          "largura": 1920,
+          "altura": 1440,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "subcapa",
+      "layout": "L1",
+      "fotos": [],
+      "titulo": "Infantil 4",
+      "subtitulo": "",
+      "ano": "2024",
+      "imagem": "_capas/subcapa_infantil4.jpg"
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/10.jpeg",
+          "largura": 1980,
+          "altura": 3520,
+          "orientacao": "retrato",
+          "slot_index": 0,
+          "pan_x": 0.043999999999999616,
+          "pan_y": 0.019999999999999706,
+          "zoom": 1,
+          "slot_tipo": "fv-l"
+        },
+        {
+          "caminho": "infantil4/11.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.019999999999999615,
+          "pan_y": 0.44799999999999995,
+          "zoom": 0.9920411518216126,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/15.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 0.9954654641076919,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/16.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.54,
+          "pan_y": 0.54,
+          "zoom": 1.9468327151238916,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/17.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.548,
+          "pan_y": 0.6120000000000001,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/19.jpeg",
+          "largura": 3024,
+          "altura": 4032,
+          "orientacao": "retrato",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "fv-r"
+        },
+        {
+          "caminho": "infantil4/2.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 0.3,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/20.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.8200000000000003,
+          "pan_y": 1,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/21.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/22.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/23.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/25.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.6760000000000002,
+          "pan_y": 0.49599999999999955,
+          "zoom": 0.3,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/26.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.44399999999999995,
+          "pan_y": 0.42799999999999994,
+          "zoom": 0.7783185969293113,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/27.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.043999999999999616,
+          "pan_y": 0.027999999999999615,
+          "zoom": 1.0690266370773307,
+          "slot_tipo": "fh-t"
+        },
+        {
+          "caminho": "infantil4/28.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 0.3,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/29.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/30.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/31.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/32.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/33.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.6280000000000001,
+          "pan_y": 0.524,
+          "zoom": 1,
+          "slot_tipo": "fv-r"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/35.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.7439999999999998,
+          "pan_y": 0.552,
+          "zoom": 0.8720509105175736,
+          "slot_tipo": "fv-r"
+        },
+        {
+          "caminho": "infantil4/37.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/38.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.6120000000000001,
+          "pan_y": 0.43599999999999994,
+          "zoom": 2.7138796427845966,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/39.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.524,
+          "pan_y": 0.532,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/40.jpeg",
+          "largura": 3096,
+          "altura": 4128,
+          "orientacao": "retrato",
+          "slot_index": 0,
+          "pan_x": 0.35999999999999943,
+          "pan_y": 1,
+          "zoom": 1.008895112122408,
+          "slot_tipo": "fv-r"
+        },
+        {
+          "caminho": "infantil4/41.jpeg",
+          "largura": 3096,
+          "altura": 4128,
+          "orientacao": "retrato",
+          "slot_index": 1,
+          "pan_x": 0.484,
+          "pan_y": 0.3799999999999999,
+          "zoom": 0.9697463248670096,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/43.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/45.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/46.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/47.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/48.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/49.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/50.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/53.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1.1794012409448626,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/54.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.3719999999999999,
+          "pan_y": 0.484,
+          "zoom": 0.3,
+          "slot_tipo": "fv-l"
+        },
+        {
+          "caminho": "infantil4/55.jpeg",
+          "largura": 1600,
+          "altura": 1200,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.484,
+          "zoom": 0.3,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/56.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.19599999999999973,
+          "pan_y": 0.6120000000000001,
+          "zoom": 1.3442439565062505,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/57.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.7320000000000002,
+          "pan_y": 0.5800000000000001,
+          "zoom": 1.6967499088495963,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/58.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.4159999999999999,
+          "pan_y": 0.18399999999999972,
+          "zoom": 1.9002968477830284,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/59.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.548,
+          "pan_y": 0.46799999999999997,
+          "zoom": 1.8595753219723696,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil4/6.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/60.jpeg",
+          "largura": 3024,
+          "altura": 4032,
+          "orientacao": "retrato",
+          "slot_index": 1,
+          "pan_x": 0.33199999999999985,
+          "pan_y": 0.6280000000000001,
+          "zoom": 1,
+          "slot_tipo": "fv-r"
+        },
+        {
+          "caminho": "infantil4/61.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 0.3,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/62.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L3D",
+      "fotos": [
+        {
+          "caminho": "infantil4/63.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.524,
+          "pan_y": 0.35599999999999987,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/8.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.8440000000000003,
+          "pan_y": 0.976,
+          "zoom": 1.4908093637228004,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil4/9.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "subcapa",
+      "layout": "L1",
+      "fotos": [],
+      "titulo": "Infantil 5",
+      "subtitulo": "",
+      "ano": "2025",
+      "imagem": "_capas/subcapa_infantil5.jpg"
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil5/1 (1).jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/1.jpeg",
+          "largura": 3024,
+          "altura": 4032,
+          "orientacao": "retrato",
+          "slot_index": 1,
+          "pan_x": 0.22799999999999976,
+          "pan_y": 0.8239999999999998,
+          "zoom": 1.2241434429585927,
+          "slot_tipo": "fv-l"
+        },
+        {
+          "caminho": "infantil5/10.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.7480000000000002,
+          "pan_y": 0.5720000000000001,
+          "zoom": 0.6082461319863797,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/11.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.524,
+          "pan_y": 0.44399999999999995,
+          "zoom": 1.6071834721788825,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil5/12.jpeg",
+          "largura": 3024,
+          "altura": 4032,
+          "orientacao": "retrato",
+          "slot_index": 0,
+          "pan_x": 0.32399999999999984,
+          "pan_y": 0.6440000000000001,
+          "zoom": 0.3803443068265913,
+          "slot_tipo": "fv-r"
+        },
+        {
+          "caminho": "infantil5/13.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 0.6520579954609276,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/14.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/15.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil5/16.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/17.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/18.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 1,
+          "pan_y": 0.6760000000000002,
+          "zoom": 1.3846558783017084,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/19.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil5/2 (1).jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/2.jpeg",
+          "largura": 3024,
+          "altura": 4032,
+          "orientacao": "retrato",
+          "slot_index": 1,
+          "pan_x": 1,
+          "pan_y": 0.556,
+          "zoom": 1.135546361170708,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/20.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/21.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.548,
+          "pan_y": 0.7160000000000002,
+          "zoom": 1.2711493818461879,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil5/22.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/3 (1).jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/3.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.6680000000000003,
+          "pan_y": 0.7320000000000002,
+          "zoom": 1.1084205013513562,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/4 (1).jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil5/4.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.23599999999999977,
+          "pan_y": 0.6120000000000001,
+          "zoom": 1.460061900019644,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/5 (1).jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/5.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/6 (1).jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L4",
+      "fotos": [
+        {
+          "caminho": "infantil5/6.jpeg",
+          "largura": 3520,
+          "altura": 1980,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/7 (1).jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/7.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/8 (1).jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 3,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "conteudo",
+      "layout": "L3D",
+      "fotos": [
+        {
+          "caminho": "infantil5/8.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 0,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/9 (1).jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 1,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        },
+        {
+          "caminho": "infantil5/9.jpeg",
+          "largura": 4032,
+          "altura": 3024,
+          "orientacao": "paisagem",
+          "slot_index": 2,
+          "pan_x": 0.5,
+          "pan_y": 0.5,
+          "zoom": 1,
+          "slot_tipo": "auto"
+        }
+      ],
+      "titulo": "",
+      "subtitulo": "",
+      "ano": "",
+      "imagem": ""
+    },
+    {
+      "tipo": "contra_capa",
+      "layout": "L1",
+      "fotos": [],
+      "titulo": "Bruno Sereia Broering",
+      "subtitulo": "Infantil 2021 ~ 2025",
+      "ano": "",
+      "imagem": "_capas/contra_capa.jpg"
+    }
+  ]
+}

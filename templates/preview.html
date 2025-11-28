@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview do Fotolivro - Bruno Sereia Broering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-tertiary: #1e1e1e;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --accent: #c9a962;
+            --accent-hover: #dbb872;
+            --border: #2a2a2a;
+            --page-shadow: rgba(0, 0, 0, 0.5);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: linear-gradient(180deg, var(--bg-primary) 0%, transparent 100%);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--accent);
+        }
+        
+        .header-info {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .stat-label {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .btn {
+            background: var(--accent);
+            color: var(--bg-primary);
+            border: none;
+            padding: 0.6rem 1.2rem;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .btn:hover {
+            background: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+        
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 5rem 1rem 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        /* Pages List */
+        .pages-sidebar {
+            width: 160px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 5rem;
+            height: calc(100vh - 6rem);
+            overflow-y: auto;
+        }
+        
+        .pages-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+        
+        .page-thumb {
+            background: var(--bg-secondary);
+            border: 2px solid var(--border);
+            border-radius: 4px;
+            padding: 0.4rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .page-thumb:hover {
+            border-color: var(--accent);
+        }
+        
+        .page-thumb.active {
+            border-color: var(--accent);
+            background: var(--bg-tertiary);
+        }
+        
+        .page-thumb-preview {
+            aspect-ratio: 297 / 210;
+            background: white;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        
+        .page-thumb-label {
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 0.2rem;
+        }
+        
+        /* Page Preview */
+        .preview-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .page-wrapper {
+            max-width: 900px;
+            width: 100%;
+        }
+        
+        /* Layout selector */
+        .layout-selector {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .layout-btn {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            padding: 0.4rem 0.8rem;
+            font-size: 0.7rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .layout-btn:hover {
+            border-color: var(--accent);
+            color: var(--text-primary);
+        }
+        
+        .layout-btn.active {
+            background: var(--accent);
+            color: var(--bg-primary);
+            border-color: var(--accent);
+        }
+        
+        .page-preview {
+            aspect-ratio: 297 / 210;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px var(--page-shadow);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* Page Types */
+        .page-capa, .page-subcapa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .page-capa::before, .page-subcapa::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        .page-capa h1, .page-subcapa h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .page-capa h2, .page-subcapa h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.9);
+            position: relative;
+            z-index: 1;
+            margin-top: 0.5rem;
+        }
+        
+        .page-capa h3 {
+            font-size: 1.25rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.8);
+            position: relative;
+            z-index: 1;
+            margin-top: 1rem;
+        }
+        
+        /* Content Page */
+        .page-conteudo {
+            height: 100%;
+            padding: 10px;
+            display: grid;
+            gap: 5px;
+        }
+        
+        .foto-slot {
+            position: relative;
+            overflow: hidden;
+            cursor: grab;
+            border-radius: 2px;
+            background: #f0f0f0;
+        }
+        
+        .foto-slot:active {
+            cursor: grabbing;
+        }
+        
+        .foto-slot img {
+            position: absolute;
+            /* Tamanho e posição calculados via JS para permitir pan/zoom real */
+            transition: none;
+            pointer-events: none;
+            user-select: none;
+        }
+        
+        .foto-slot.ajustando {
+            outline: 3px solid var(--accent);
+            outline-offset: -3px;
+        }
+        
+        .foto-ajustada::after {
+            content: '✓';
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background: var(--accent);
+            color: var(--bg-primary);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .foto-slot .zoom-indicator {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 10px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        
+        .foto-slot:hover .zoom-indicator,
+        .foto-slot.ajustando .zoom-indicator {
+            opacity: 1;
+        }
+        
+        .foto-slot .slot-tipo-indicator {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: var(--accent);
+            color: var(--bg-primary);
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 9px;
+            font-weight: 600;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.2s;
+            text-transform: uppercase;
+        }
+        
+        .foto-slot:hover .slot-tipo-indicator {
+            opacity: 1;
+        }
+        
+        .foto-slot .slot-tipo-indicator:hover {
+            background: var(--accent-hover);
+        }
+        
+        /* Modal de seleção de tipo */
+        .tipo-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .tipo-modal.active {
+            display: flex;
+        }
+        
+        .tipo-modal-content {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 1.5rem;
+            max-width: 400px;
+            width: 90%;
+        }
+        
+        .tipo-modal h3 {
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .tipo-opcoes {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .tipo-opcao {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .tipo-opcao:hover {
+            border-color: var(--accent);
+        }
+        
+        .tipo-opcao.selected {
+            border-color: var(--accent);
+            background: rgba(201, 169, 98, 0.1);
+        }
+        
+        .tipo-opcao-icon {
+            width: 50px;
+            height: 35px;
+            background: var(--border);
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            color: var(--text-secondary);
+        }
+        
+        .tipo-opcao-info {
+            flex: 1;
+        }
+        
+        .tipo-opcao-nome {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .tipo-opcao-desc {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Contra Capa */
+        .page-contra-capa {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: white;
+        }
+        
+        .page-contra-capa h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #333;
+        }
+        
+        .page-contra-capa h2 {
+            font-size: 1.25rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        
+        /* Layout Grids */
+        .layout-1 { grid-template-columns: 1fr; grid-template-rows: 1fr; }
+        .layout-2h { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr; }
+        .layout-2v { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+        .layout-3a { 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+        }
+        .layout-3a .foto-slot:nth-child(3) {
+            grid-column: span 2;
+        }
+        .layout-3b { 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+        }
+        .layout-3b .foto-slot:first-child {
+            grid-column: span 2;
+        }
+        .layout-3c {
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 1fr 1fr;
+        }
+        .layout-3c .foto-slot:first-child {
+            grid-row: span 2;
+            grid-column: 2;
+        }
+        .layout-3d {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .layout-3d .foto-slot:first-child {
+            grid-column: span 2;
+        }
+        .layout-4 { grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; }
+        
+        /* Navigation */
+        .page-nav {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            align-items: center;
+        }
+        
+        .page-nav button {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-size: 0.85rem;
+        }
+        
+        .page-nav button:hover {
+            background: var(--bg-secondary);
+            border-color: var(--accent);
+        }
+        
+        .page-nav button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+        
+        .page-number {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        /* Help tooltip */
+        .help-text {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+        
+        /* Loading */
+        .loading {
+            position: fixed;
+            inset: 0;
+            background: var(--bg-primary);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+        
+        .loading.hidden {
+            display: none;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid var(--border);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: var(--border);
+            border-radius: 3px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-secondary);
+        }
+        
+        /* Toast notification */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
+            color: var(--bg-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            opacity: 0;
+            transition: opacity 0.3s;
+            z-index: 1000;
+        }
+        
+        .toast.show {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+    
+    <header>
+        <div class="logo">📖 Fotolivro Preview</div>
+        <div class="header-info">
+            <div class="stat">
+                <div class="stat-value" id="total-fotos">-</div>
+                <div class="stat-label">Fotos</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="total-paginas">-</div>
+                <div class="stat-label">Páginas</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="total-ajustes">0</div>
+                <div class="stat-label">Ajustes</div>
+            </div>
+            <button class="btn" id="btn-gerar" onclick="gerarPDF()">Gerar PDF</button>
+        </div>
+    </header>
+    
+    <main>
+        <aside class="pages-sidebar">
+            <div class="pages-list" id="pages-list"></div>
+        </aside>
+        
+        <div class="preview-container">
+            <div class="page-wrapper">
+                <div class="layout-selector" id="layout-selector"></div>
+                <div class="page-preview" id="page-preview"></div>
+            </div>
+            
+            <div class="page-nav">
+                <button onclick="irParaPagina(paginaAtual - 1)" id="btn-prev">← Anterior</button>
+                <span class="page-number">
+                    Página <span id="pagina-atual">1</span> de <span id="total-pags">-</span>
+                </span>
+                <button onclick="irParaPagina(paginaAtual + 1)" id="btn-next">Próxima →</button>
+            </div>
+            <div class="help-text">
+                🖱️ Arraste/Scroll = mover • Ctrl+Scroll/Pinch = zoom • Duplo clique = resetar
+            </div>
+        </div>
+    </main>
+    
+    <!-- Modal de seleção de tipo de slot -->
+    <div class="tipo-modal" id="tipo-modal">
+        <div class="tipo-modal-content">
+            <h3>Tipo de Slot para a Foto</h3>
+            <div class="tipo-opcoes" id="tipo-opcoes">
+                <!-- Preenchido dinamicamente -->
+            </div>
+        </div>
+    </div>
+    
+    <div class="toast" id="toast"></div>
+    
+    <script>
+        // Tipos de slot disponíveis
+        const SLOT_TIPOS = [
+            { id: 'auto', nome: 'Auto', desc: 'Escolha automática', icon: '⚡' },
+            { id: 'full', nome: 'Full', desc: 'Página inteira', icon: '▣' },
+            { id: 'fv-l', nome: 'Vertical Esq', desc: 'Altura total, metade esquerda', icon: '◧' },
+            { id: 'fv-r', nome: 'Vertical Dir', desc: 'Altura total, metade direita', icon: '◨' },
+            { id: 'fh-t', nome: 'Horizontal Topo', desc: 'Largura total, metade superior', icon: '⬒' },
+            { id: 'fh-b', nome: 'Horizontal Baixo', desc: 'Largura total, metade inferior', icon: '⬓' },
+            { id: 'square', nome: 'Square', desc: 'Slot menor (3-4 fotos)', icon: '◻' }
+        ];
+        
+        function getSlotTipoLabel(tipo) {
+            const t = SLOT_TIPOS.find(s => s.id === tipo);
+            return t ? t.icon : '⚡';
+        }
+        let fotolivro = null;
+        let paginaAtual = 0;
+        let ajustesLocais = {};
+        let layoutsPersonalizados = {};  // {paginaIndex: layoutName}
+        
+        // Drag state
+        let isDragging = false;
+        let isZooming = false;
+        let dragStart = { x: 0, y: 0 };
+        let fotoArrastando = null;
+        
+        // Toast
+        function mostrarToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.textContent = msg;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2000);
+        }
+        
+        // Carregar fotolivro
+        async function carregarFotolivro(voltarParaPagina = null) {
+            try {
+                // Salvar página atual antes de recarregar
+                const paginaAnterior = voltarParaPagina !== null ? voltarParaPagina : paginaAtual;
+                
+                const response = await fetch('/api/fotolivro');
+                fotolivro = await response.json();
+                
+                document.getElementById('total-fotos').textContent = fotolivro.total_fotos;
+                document.getElementById('total-paginas').textContent = fotolivro.total_paginas;
+                document.getElementById('total-pags').textContent = fotolivro.total_paginas;
+                
+                // Carregar ajustes
+                const ajustesResponse = await fetch('/api/ajustes');
+                const dados = await ajustesResponse.json();
+                ajustesLocais = dados.ajustes || {};
+                layoutsPersonalizados = dados.layouts || {};
+                atualizarContadorAjustes();
+                
+                renderizarListaPaginas();
+                
+                // Voltar para a página que estava (ou 0 se era primeira carga)
+                const paginaDestino = Math.min(paginaAnterior, fotolivro.total_paginas - 1);
+                irParaPagina(paginaDestino >= 0 ? paginaDestino : 0);
+                
+                document.getElementById('loading').classList.add('hidden');
+            } catch (error) {
+                console.error('Erro ao carregar fotolivro:', error);
+                alert('Erro ao carregar fotolivro');
+            }
+        }
+        
+        function renderizarListaPaginas() {
+            const lista = document.getElementById('pages-list');
+            lista.innerHTML = '';
+            
+            fotolivro.paginas.forEach((pagina, index) => {
+                const thumb = document.createElement('div');
+                thumb.className = 'page-thumb';
+                thumb.onclick = () => irParaPagina(index);
+                
+                let tipoLabel = '';
+                if (pagina.tipo === 'capa') tipoLabel = 'Capa';
+                else if (pagina.tipo === 'subcapa') tipoLabel = pagina.titulo;
+                else if (pagina.tipo === 'contra_capa') tipoLabel = 'Contra Capa';
+                else tipoLabel = `Pág ${index + 1}`;
+                
+                thumb.innerHTML = `
+                    <div class="page-thumb-preview" style="background: ${pagina.tipo === 'contra_capa' ? 'white' : '#333'}"></div>
+                    <div class="page-thumb-label">${tipoLabel}</div>
+                `;
+                
+                lista.appendChild(thumb);
+            });
+        }
+        
+        function irParaPagina(index) {
+            if (index < 0 || index >= fotolivro.paginas.length) return;
+            
+            paginaAtual = index;
+            
+            document.querySelectorAll('.page-thumb').forEach((thumb, i) => {
+                thumb.classList.toggle('active', i === index);
+            });
+            
+            document.getElementById('pagina-atual').textContent = index + 1;
+            document.getElementById('btn-prev').disabled = index === 0;
+            document.getElementById('btn-next').disabled = index === fotolivro.paginas.length - 1;
+            
+            renderizarPagina(fotolivro.paginas[index], index);
+        }
+        
+        // Todos os layouts disponíveis - sempre mostrar todas as opções
+        const TODOS_LAYOUTS = [
+            { id: 'L1', nome: '1 foto', fotos: 1 },
+            { id: 'L2H', nome: '2 lado a lado', fotos: 2 },
+            { id: 'L2V', nome: '2 empilhadas', fotos: 2 },
+            { id: 'L3A', nome: '2 cima + 1', fotos: 3 },
+            { id: 'L3B', nome: '1 + 2 baixo', fotos: 3 },
+            { id: 'L3C', nome: '1v + 2h', fotos: 3 },
+            { id: 'L3D', nome: '1h + 2h', fotos: 3 },
+            { id: 'L4', nome: '2x2', fotos: 4 }
+        ];
+        
+        function getLayoutsDisponiveis(numFotos) {
+            // Retorna todos os layouts - usuário pode escolher qualquer um
+            return TODOS_LAYOUTS;
+        }
+        
+        function getNumFotosLayout(layoutId) {
+            const layout = TODOS_LAYOUTS.find(l => l.id === layoutId);
+            return layout ? layout.fotos : 1;
+        }
+        
+        function getLayoutClass(layoutId) {
+            const map = {
+                'L1': 'layout-1',
+                'L2H': 'layout-2h',
+                'L2V': 'layout-2v',
+                'L3A': 'layout-3a',
+                'L3B': 'layout-3b',
+                'L3C': 'layout-3c',
+                'L3D': 'layout-3d',
+                'L4': 'layout-4'
+            };
+            return map[layoutId] || 'layout-1';
+        }
+        
+        function detectarLayoutAtual(pagina) {
+            const numFotos = pagina.fotos.length;
+            if (numFotos === 1) return 'L1';
+            if (numFotos === 4) return 'L4';
+            
+            const layout = pagina.layout.toLowerCase();
+            if (numFotos === 2) {
+                return layout.includes('horizontal') ? 'L2H' : 'L2V';
+            }
+            if (numFotos === 3) {
+                if (layout.includes('1v+2h')) return 'L3C';
+                if (layout.includes('1h+2h')) return 'L3D';
+                if (layout.includes('2+1')) return 'L3A';
+                return 'L3B';
+            }
+            return 'L1';
+        }
+        
+        function renderizarPagina(pagina, paginaIndex) {
+            const preview = document.getElementById('page-preview');
+            const layoutSelector = document.getElementById('layout-selector');
+            
+            // Limpar seletor de layout
+            layoutSelector.innerHTML = '';
+            
+            if (pagina.tipo === 'capa') {
+                if (pagina.imagem) {
+                    // Usar imagem pré-gerada
+                    preview.innerHTML = `
+                        <div class="page-capa" style="background: url('/foto/${pagina.imagem}') center/cover">
+                        </div>
+                    `;
+                } else {
+                    preview.innerHTML = `
+                        <div class="page-capa" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/foto/${pagina.fotos[0]}') center/cover">
+                            <h1>${pagina.titulo}</h1>
+                            <h2>${pagina.subtitulo}</h2>
+                            <h3>${pagina.periodo}</h3>
+                        </div>
+                    `;
+                }
+            }
+            else if (pagina.tipo === 'subcapa') {
+                if (pagina.imagem) {
+                    preview.innerHTML = `
+                        <div class="page-subcapa" style="background: url('/foto/${pagina.imagem}') center/cover">
+                        </div>
+                    `;
+                } else {
+                    preview.innerHTML = `
+                        <div class="page-subcapa" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/foto/${pagina.fotos[0]}') center/cover">
+                            <h1>${pagina.titulo}</h1>
+                            <h2>~ ${pagina.ano}</h2>
+                        </div>
+                    `;
+                }
+            }
+            else if (pagina.tipo === 'contra_capa') {
+                if (pagina.imagem) {
+                    preview.innerHTML = `
+                        <div class="page-contra-capa" style="background: url('/foto/${pagina.imagem}') center/cover">
+                        </div>
+                    `;
+                } else {
+                    preview.innerHTML = `
+                        <div class="page-contra-capa">
+                            <h1>${pagina.texto1}</h1>
+                            <h2>${pagina.texto2}</h2>
+                        </div>
+                    `;
+                }
+            }
+            else if (pagina.tipo === 'conteudo') {
+                const numFotos = pagina.fotos.length;
+                const layouts = getLayoutsDisponiveis(numFotos);
+                
+                // Layout atual (do schema)
+                let layoutAtual = pagina.layout || 'L1';
+                
+                // Sempre renderizar botões de layout para páginas de conteúdo
+                layouts.forEach(l => {
+                    const btn = document.createElement('button');
+                    btn.className = 'layout-btn' + (l.id === layoutAtual ? ' active' : '');
+                    btn.textContent = l.nome;
+                    btn.onclick = () => mudarLayoutPagina(paginaIndex, l.id);
+                    layoutSelector.appendChild(btn);
+                });
+                
+                const layoutClass = getLayoutClass(layoutAtual);
+                
+                // Usar dados do schema diretamente para garantir consistência
+                let fotosHtml = pagina.fotos.map((foto, index) => {
+                    const temAjuste = (foto.pan_x !== 0.5 || foto.pan_y !== 0.5 || foto.zoom !== 1.0 || foto.slot_tipo !== 'auto');
+                    const slotTipo = foto.slot_tipo || 'auto';
+                    
+                    // Atualizar ajustesLocais com dados do schema
+                    ajustesLocais[foto.caminho] = {
+                        pan_x: foto.pan_x,
+                        pan_y: foto.pan_y,
+                        zoom: foto.zoom,
+                        slot_tipo: foto.slot_tipo
+                    };
+                    
+                    return `
+                        <div class="foto-slot ${temAjuste ? 'foto-ajustada' : ''}" 
+                             data-foto="${foto.caminho}"
+                             data-zoom="${foto.zoom}"
+                             data-pan-x="${foto.pan_x}"
+                             data-pan-y="${foto.pan_y}"
+                             data-slot-tipo="${slotTipo}"
+                             data-img-w="${foto.largura}"
+                             data-img-h="${foto.altura}"
+                             ondblclick="resetarFoto('${foto.caminho}')">
+                            <img src="/foto/${foto.caminho}" draggable="false">
+                            <div class="zoom-indicator">${foto.zoom.toFixed(2)}x</div>
+                            <div class="slot-tipo-indicator" onclick="event.stopPropagation(); abrirSeletorTipo('${foto.caminho}')">${getSlotTipoLabel(slotTipo)}</div>
+                        </div>
+                    `;
+                }).join('');
+                
+                preview.innerHTML = `<div class="page-conteudo ${layoutClass}">${fotosHtml}</div>`;
+                
+                // Adicionar eventos e aplicar visual após layout estar calculado
+                requestAnimationFrame(() => {
+                    document.querySelectorAll('.foto-slot').forEach(slot => {
+                        // Aplicar pan/zoom visual
+                        const zoom = parseFloat(slot.dataset.zoom) || 1;
+                        const panX = parseFloat(slot.dataset.panX) || 0.5;
+                        const panY = parseFloat(slot.dataset.panY) || 0.5;
+                        atualizarVisualFoto(slot, zoom, panX, panY);
+                        
+                        // Mouse
+                        slot.addEventListener('mousedown', iniciarDrag);
+                        // Touch (pinch zoom + pan)
+                        slot.addEventListener('touchstart', iniciarTouch, { passive: false });
+                        slot.addEventListener('touchmove', moverTouch, { passive: false });
+                        slot.addEventListener('touchend', finalizarTouch);
+                        // Wheel (trackpad scroll)
+                        slot.addEventListener('wheel', handleWheel, { passive: false });
+                    });
+                });
+            }
+        }
+        
+        async function mudarLayoutPagina(paginaIndex, layoutId) {
+            // Chamar endpoint que redistribui fotos apenas no capítulo atual
+            try {
+                const response = await fetch('/api/mudar_layout_pagina', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        indice_pagina: paginaIndex,
+                        novo_layout: layoutId
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Atualizar dados locais com a resposta do servidor
+                    fotolivro.paginas = result.paginas;
+                    fotolivro.total_paginas = result.total_paginas;
+                    
+                    document.getElementById('total-paginas').textContent = result.total_paginas;
+                    document.getElementById('total-pags').textContent = result.total_paginas;
+                    
+                    // Renderizar lista de páginas e página atual
+                    renderizarListaPaginas();
+                    
+                    // Garantir que estamos na mesma página (ou ajustar se necessário)
+                    const novaPagina = Math.min(paginaIndex, result.total_paginas - 1);
+                    irParaPagina(novaPagina);
+                    
+                    mostrarToast('Layout alterado');
+                } else {
+                    mostrarToast('Erro: ' + (result.mensagem || 'Falha ao alterar layout'));
+                }
+            } catch (error) {
+                console.error('Erro ao mudar layout:', error);
+                mostrarToast('Erro ao alterar layout');
+            }
+        }
+        
+        // Função antiga para compatibilidade
+        async function mudarLayout(paginaIndex, layoutId) {
+            await mudarLayoutPagina(paginaIndex, layoutId);
+        }
+        
+        // Estado do touch
+        let touchStartDist = 0;
+        let touchStartZoom = 1;
+        let lastTouchX = 0;
+        let lastTouchY = 0;
+        
+        function iniciarDrag(e) {
+            e.preventDefault();
+            
+            const slot = e.currentTarget;
+            fotoArrastando = slot.dataset.foto;
+            
+            isDragging = true;
+            isZooming = e.ctrlKey || e.metaKey;
+            dragStart = { x: e.clientX, y: e.clientY };
+            
+            slot.classList.add('ajustando');
+            
+            document.addEventListener('mousemove', arrastar);
+            document.addEventListener('mouseup', finalizarDrag);
+        }
+        
+        // Touch events para pinch-to-zoom e pan com 2 dedos
+        function iniciarTouch(e) {
+            const slot = e.currentTarget;
+            fotoArrastando = slot.dataset.foto;
+            slot.classList.add('ajustando');
+            
+            if (e.touches.length === 2) {
+                // Pinch to zoom - calcular distância inicial entre dedos
+                e.preventDefault();
+                const dx = e.touches[0].clientX - e.touches[1].clientX;
+                const dy = e.touches[0].clientY - e.touches[1].clientY;
+                touchStartDist = Math.sqrt(dx * dx + dy * dy);
+                touchStartZoom = parseFloat(slot.dataset.zoom) || 1;
+                
+                // Centro dos dois dedos para pan
+                lastTouchX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                lastTouchY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+            } else if (e.touches.length === 1) {
+                // Pan com 1 dedo
+                lastTouchX = e.touches[0].clientX;
+                lastTouchY = e.touches[0].clientY;
+            }
+        }
+        
+        function moverTouch(e) {
+            if (!fotoArrastando) return;
+            
+            const slot = document.querySelector(`[data-foto="${fotoArrastando}"]`);
+            if (!slot) return;
+            
+            let zoom = parseFloat(slot.dataset.zoom) || 1;
+            let panX = parseFloat(slot.dataset.panX) || 0.5;
+            let panY = parseFloat(slot.dataset.panY) || 0.5;
+            
+            if (e.touches.length === 2) {
+                e.preventDefault();
+                
+                // Pinch zoom
+                const dx = e.touches[0].clientX - e.touches[1].clientX;
+                const dy = e.touches[0].clientY - e.touches[1].clientY;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                const scale = dist / touchStartDist;
+                zoom = Math.max(0.3, Math.min(4, touchStartZoom * scale));
+                slot.dataset.zoom = zoom;
+                
+                // Pan com centro dos dedos - invertido (natural scroll)
+                const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+                const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+                const deltaX = centerX - lastTouchX;
+                const deltaY = centerY - lastTouchY;
+                
+                // Sensibilidade maior
+                const sensitivity = 0.01;
+                panX = Math.max(0, Math.min(1, panX + deltaX * sensitivity));
+                panY = Math.max(0, Math.min(1, panY + deltaY * sensitivity));
+                slot.dataset.panX = panX;
+                slot.dataset.panY = panY;
+                
+                lastTouchX = centerX;
+                lastTouchY = centerY;
+            } else             if (e.touches.length === 1) {
+                // Pan com 1 dedo - invertido (natural scroll)
+                const deltaX = e.touches[0].clientX - lastTouchX;
+                const deltaY = e.touches[0].clientY - lastTouchY;
+                
+                // Sensibilidade muito maior para pan
+                const sensitivity = 0.015;
+                panX = Math.max(0, Math.min(1, panX + deltaX * sensitivity));
+                panY = Math.max(0, Math.min(1, panY + deltaY * sensitivity));
+                slot.dataset.panX = panX;
+                slot.dataset.panY = panY;
+                
+                lastTouchX = e.touches[0].clientX;
+                lastTouchY = e.touches[0].clientY;
+            }
+            
+            atualizarVisualFoto(slot, zoom, panX, panY);
+        }
+        
+        function finalizarTouch(e) {
+            if (e.touches.length === 0) {
+                salvarAjusteFoto();
+            }
+        }
+        
+        // Wheel event para scroll zoom e pan
+        function handleWheel(e) {
+            e.preventDefault();
+            
+            const slot = e.currentTarget;
+            fotoArrastando = slot.dataset.foto;
+            
+            let zoom = parseFloat(slot.dataset.zoom) || 1;
+            let panX = parseFloat(slot.dataset.panX) || 0.5;
+            let panY = parseFloat(slot.dataset.panY) || 0.5;
+            
+            if (e.ctrlKey || e.metaKey) {
+                // Ctrl+scroll = zoom (sensibilidade maior)
+                zoom = Math.max(0.3, Math.min(4, zoom - e.deltaY * 0.01));
+                slot.dataset.zoom = zoom;
+            } else {
+                // Scroll = pan (2 dedos no trackpad) - INVERTIDO como macOS natural scroll
+                // Sensibilidade MUITO maior
+                const sensitivity = 0.008;
+                panX = Math.max(0, Math.min(1, panX - e.deltaX * sensitivity));
+                panY = Math.max(0, Math.min(1, panY - e.deltaY * sensitivity));
+                slot.dataset.panX = panX;
+                slot.dataset.panY = panY;
+            }
+            
+            atualizarVisualFoto(slot, zoom, panX, panY);
+            
+            // Debounce para salvar
+            clearTimeout(slot.saveTimeout);
+            slot.saveTimeout = setTimeout(() => salvarAjusteFoto(), 300);
+        }
+        
+        function atualizarVisualFoto(slot, zoom, panX, panY) {
+            const img = slot.querySelector('img');
+            const indicator = slot.querySelector('.zoom-indicator');
+            
+            // Dimensões do slot e da imagem original
+            const slotW = slot.offsetWidth;
+            const slotH = slot.offsetHeight;
+            const imgW = parseFloat(slot.dataset.imgW) || slotW;
+            const imgH = parseFloat(slot.dataset.imgH) || slotH;
+            
+            if (slotW === 0 || slotH === 0) return;
+            
+            // Calcular escala base para "cover" (preencher slot completamente)
+            const scaleX = slotW / imgW;
+            const scaleY = slotH / imgH;
+            const baseCoverScale = Math.max(scaleX, scaleY);
+            
+            // Escala mínima para "contain" (mostrar imagem inteira)
+            const baseContainScale = Math.min(scaleX, scaleY);
+            
+            // Zoom do usuário: 1.0 = cover, 0.5 = mostra mais, 2.0 = mais zoom
+            // Permitir ir até contain (mostrar toda a imagem)
+            const minZoom = baseContainScale / baseCoverScale;
+            const effectiveZoom = Math.max(minZoom, zoom);
+            const finalScale = baseCoverScale * effectiveZoom;
+            
+            // Tamanho final da imagem
+            const displayW = imgW * finalScale;
+            const displayH = imgH * finalScale;
+            
+            // Quanto a imagem excede o slot (ou é menor que)
+            const excessW = displayW - slotW;
+            const excessH = displayH - slotH;
+            
+            // Pan: 0.5 = centralizado, 0 = totalmente à esquerda/cima, 1 = direita/baixo
+            // Posição da imagem (negativa para mover para esquerda/cima)
+            const posX = -excessW * panX;
+            const posY = -excessH * panY;
+            
+            // Aplicar estilos
+            img.style.width = displayW + 'px';
+            img.style.height = displayH + 'px';
+            img.style.left = posX + 'px';
+            img.style.top = posY + 'px';
+            
+            if (indicator) {
+                indicator.textContent = effectiveZoom.toFixed(2) + 'x';
+            }
+        }
+        
+        function arrastar(e) {
+            if (!isDragging || !fotoArrastando) return;
+            
+            const slot = document.querySelector(`[data-foto="${fotoArrastando}"]`);
+            if (!slot) return;
+            
+            let zoom = parseFloat(slot.dataset.zoom) || 1;
+            let panX = parseFloat(slot.dataset.panX) || 0.5;
+            let panY = parseFloat(slot.dataset.panY) || 0.5;
+            
+            const deltaX = (e.clientX - dragStart.x);
+            const deltaY = (e.clientY - dragStart.y);
+            
+            if (isZooming || e.ctrlKey || e.metaKey) {
+                // Zoom com Ctrl+drag (vertical = zoom) - sensibilidade maior
+                zoom = Math.max(0.3, Math.min(4, zoom - deltaY * 0.02));
+                slot.dataset.zoom = zoom;
+            } else {
+                // Pan com drag - INVERTIDO e sensibilidade MUITO maior
+                // Arrasta a imagem na direção do mouse
+                const sensitivity = 0.012;
+                panX = Math.max(0, Math.min(1, panX + deltaX * sensitivity));
+                panY = Math.max(0, Math.min(1, panY + deltaY * sensitivity));
+                slot.dataset.panX = panX;
+                slot.dataset.panY = panY;
+            }
+            
+            dragStart = { x: e.clientX, y: e.clientY };
+            atualizarVisualFoto(slot, zoom, panX, panY);
+        }
+        
+        async function salvarAjusteFoto() {
+            if (!fotoArrastando) return;
+            
+            const slot = document.querySelector(`[data-foto="${fotoArrastando}"]`);
+            if (slot) {
+                const zoom = parseFloat(slot.dataset.zoom) || 1;
+                const panX = parseFloat(slot.dataset.panX) || 0.5;
+                const panY = parseFloat(slot.dataset.panY) || 0.5;
+                const slotTipo = slot.dataset.slotTipo || 'auto';
+                
+                // Preservar slot_tipo existente
+                const existente = ajustesLocais[fotoArrastando] || {};
+                ajustesLocais[fotoArrastando] = { 
+                    pan_x: panX, 
+                    pan_y: panY, 
+                    zoom: zoom,
+                    slot_tipo: existente.slot_tipo || slotTipo
+                };
+                slot.classList.add('foto-ajustada');
+                
+                await salvarTodosAjustes();
+                atualizarContadorAjustes();
+            }
+        }
+        
+        async function finalizarDrag() {
+            if (!fotoArrastando) return;
+            
+            const slot = document.querySelector(`[data-foto="${fotoArrastando}"]`);
+            if (slot) {
+                slot.classList.remove('ajustando');
+                await salvarAjusteFoto();
+            }
+            
+            isDragging = false;
+            isZooming = false;
+            fotoArrastando = null;
+            
+            document.removeEventListener('mousemove', arrastar);
+            document.removeEventListener('mouseup', finalizarDrag);
+        }
+        
+        // Funções para seletor de tipo de slot
+        let fotoSelecionadaTipo = null;
+        
+        function abrirSeletorTipo(caminho) {
+            fotoSelecionadaTipo = caminho;
+            const ajuste = ajustesLocais[caminho] || { slot_tipo: 'auto' };
+            const tipoAtual = ajuste.slot_tipo || 'auto';
+            
+            const modal = document.getElementById('tipo-modal');
+            const opcoes = document.getElementById('tipo-opcoes');
+            
+            opcoes.innerHTML = SLOT_TIPOS.map(t => `
+                <div class="tipo-opcao ${t.id === tipoAtual ? 'selected' : ''}" 
+                     onclick="selecionarTipo('${t.id}')">
+                    <div class="tipo-opcao-icon">${t.icon}</div>
+                    <div class="tipo-opcao-info">
+                        <div class="tipo-opcao-nome">${t.nome}</div>
+                        <div class="tipo-opcao-desc">${t.desc}</div>
+                    </div>
+                </div>
+            `).join('');
+            
+            modal.classList.add('active');
+        }
+        
+        async function selecionarTipo(tipo) {
+            if (!fotoSelecionadaTipo) return;
+            
+            const paginaParaVoltar = paginaAtual;
+            
+            try {
+                // Chamar endpoint específico para atualizar slot_tipo
+                const response = await fetch('/api/atualizar_foto', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        caminho: fotoSelecionadaTipo,
+                        slot_tipo: tipo
+                    })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    // Atualizar ajuste local
+                    if (!ajustesLocais[fotoSelecionadaTipo]) {
+                        ajustesLocais[fotoSelecionadaTipo] = { pan_x: 0.5, pan_y: 0.5, zoom: 1.0 };
+                    }
+                    ajustesLocais[fotoSelecionadaTipo].slot_tipo = tipo;
+                    
+                    // Atualizar também no fotolivro local
+                    for (const pagina of fotolivro.paginas) {
+                        for (const foto of pagina.fotos) {
+                            if (foto.caminho === fotoSelecionadaTipo) {
+                                foto.slot_tipo = tipo;
+                                break;
+                            }
+                        }
+                    }
+                    
+                    document.getElementById('tipo-modal').classList.remove('active');
+                    mostrarToast(`Tipo: ${SLOT_TIPOS.find(t => t.id === tipo)?.nome || tipo}`);
+                    
+                    // Re-renderizar apenas a página atual
+                    renderizarPagina(fotolivro.paginas[paginaParaVoltar], paginaParaVoltar);
+                    atualizarContadorAjustes();
+                } else {
+                    mostrarToast('Erro ao salvar tipo');
+                }
+            } catch (error) {
+                console.error('Erro:', error);
+                mostrarToast('Erro ao salvar tipo');
+            }
+            
+            fotoSelecionadaTipo = null;
+        }
+        
+        // Fechar modal ao clicar fora
+        document.getElementById('tipo-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'tipo-modal') {
+                e.target.classList.remove('active');
+                fotoSelecionadaTipo = null;
+            }
+        });
+        
+        async function resetarFoto(caminho) {
+            delete ajustesLocais[caminho];
+            await salvarTodosAjustes();
+            atualizarContadorAjustes();
+            renderizarPagina(fotolivro.paginas[paginaAtual], paginaAtual);
+            mostrarToast('Ajuste resetado');
+        }
+        
+        async function salvarTodosAjustes() {
+            try {
+                await fetch('/api/ajustes', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        ajustes: ajustesLocais,
+                        layouts: layoutsPersonalizados
+                    })
+                });
+            } catch (error) {
+                console.error('Erro ao salvar:', error);
+            }
+        }
+        
+        function atualizarContadorAjustes() {
+            const total = Object.keys(ajustesLocais).length + Object.keys(layoutsPersonalizados).length;
+            document.getElementById('total-ajustes').textContent = total;
+        }
+        
+        async function gerarPDF() {
+            const btn = document.getElementById('btn-gerar');
+            btn.disabled = true;
+            btn.textContent = 'Gerando...';
+            
+            try {
+                const response = await fetch('/api/gerar_pdf', { method: 'POST' });
+                const result = await response.json();
+                
+                if (result.success) {
+                    mostrarToast('✓ PDF gerado com sucesso!');
+                    alert(`PDF gerado!\n\n${result.arquivo}`);
+                } else {
+                    alert('Erro: ' + result.mensagem);
+                }
+            } catch (error) {
+                alert('Erro: ' + error.message);
+            } finally {
+                btn.disabled = false;
+                btn.textContent = 'Gerar PDF';
+            }
+        }
+        
+        // Teclas de navegação
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') irParaPagina(paginaAtual - 1);
+            if (e.key === 'ArrowRight') irParaPagina(paginaAtual + 1);
+        });
+        
+        // Iniciar
+        carregarFotolivro();
+    </script>
+</body>
+</html>
