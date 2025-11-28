@@ -1221,13 +1221,26 @@
                 
                 // Preservar slot_tipo existente
                 const existente = ajustesLocais[fotoArrastando] || {};
-                ajustesLocais[fotoArrastando] = { 
+                const novoAjuste = { 
                     pan_x: panX, 
                     pan_y: panY, 
                     zoom: zoom,
                     slot_tipo: existente.slot_tipo || slotTipo
                 };
+                ajustesLocais[fotoArrastando] = novoAjuste;
                 slot.classList.add('foto-ajustada');
+                
+                // Atualizar também os dados em fotolivro para manter sincronizado
+                for (const pagina of fotolivro.paginas) {
+                    for (const foto of pagina.fotos) {
+                        if (foto.caminho === fotoArrastando) {
+                            foto.pan_x = panX;
+                            foto.pan_y = panY;
+                            foto.zoom = zoom;
+                            break;
+                        }
+                    }
+                }
                 
                 await salvarTodosAjustes();
                 atualizarContadorAjustes();
